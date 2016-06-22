@@ -1,0 +1,75 @@
+@main-color:#FF5D68;
+@bdtxt-color:#333;
+@hightlight-color:#FF5D68;
+@bg-color:#fff;
+
+@big-font-size:16px;
+@normal-font-size:14px;
+@small-font-size:12px;
+@icon-size:@big-font-size;
+
+@border-color:#E6E6E6;
+@hightlight-border-color:#FF5D68;
+@border-radius:3px;
+@btn-font-size:@normal-font-size;
+@btn-color:#FF5D68;
+@btn-highlight-color:#C96562;
+@btn-txt-color:#fff;
+
+@shadow-color:#C6CACC;
+@gray-color:#666;
+
+@nav-color:#fff;
+@logo-bg-color:#FF5D68;
+
+@icon-symbol-arrow-right:\e600;
+@icon-symbol-arrow-left:\e608;
+@icon-symbol-logo:\e602;
+@icon-symbol-search:\e601;
+@icon-symbol-hezu:\e603;
+@icon-symbol-zhengzu:\e604;
+@icon-symbol-gongyu:\e605;
+@icon-symbol-shangquan:\e606;
+@icon-symbol-more:\e607;
+@icon-symbol-wechat:\e60a;
+@icon-symbol-feedback:\e60c;
+@icon-symbol-top:\e60b;
+@icon-symbol-qrcode:\e609;
+@icon-symbol-close:\e60f;
+@icon-symbol-right:\e610;
+@icon-symbol-triangle:\e60d;
+@icon-symbol-hot:\e615;
+@icon-symbol-prefer:\e616;
+@icon-symbol-close2:\e614;
+@icon-symbol-up:\e613;
+@icon-symbol-down:\e612;
+@icon-symbol-delete:\e611;
+
+.iconfont(@symbol: "") {
+  font-family: "iconfont" !important;
+  font-size: @icon-size;
+  font-style: normal;
+  content: "@{symbol}";
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.box-sizing(@model){
+  -webkit-box-sizing:@model;
+  -ms-box-sizing:@model;
+  box-sizing: @model;
+}
+
+.word-hidden(){
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.linear-gradient(@angle:0deg;@colorStart;@colorStop){
+  background: -webkit-linear-gradient(@angle,@colorStart, @colorStop);
+  background: -moz-linear-gradient(@angle,@colorStart, @colorStop);
+  background: -ms-linear-gradient(@angle,@colorStart, @colorStop);
+  background: linear-gradient(@angle,@colorStart, @colorStop);
+}

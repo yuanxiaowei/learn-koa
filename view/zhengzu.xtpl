@@ -1,0 +1,543 @@
+{{extend ("./layout/layout")}}
+
+{{#block ("head")}}
+    <style>
+
+    </style>
+{{/block}}
+
+{{#block ("body")}}
+
+<div class="container">
+  <div class="crumbs">
+    <a href="">首页</a>
+    >
+    <a href="">我要租房</a>
+  </div>
+  <div class="wrap term-wrap">
+    <div class="terms">
+      <label class="term-title">区域:</label>
+      <span class="term-list">
+        <a href="">不限</a>
+        <a href="" class="active">上城区</a>
+        <a href="">下城区</a>
+        <a href="">拱墅区</a>
+        <a href="">江干区</a>
+        <a href="">西湖区</a>
+        <a href="">滨江区</a>
+        <a href="">萧山区</a>
+        <a href="">余杭区</a>
+        <div class="sub-items">
+          <label class="term-title">商圈:</label>
+          <span class="term-list">
+            <a href="">不限</a>
+            <a href="">复兴</a>
+            <a href="">之江</a>
+            <a href="">南星桥</a>
+            <a href="">近江</a>
+            <a href="">四季青</a>
+            <a href="">望江门</a>
+            <a href="">清泰/城站</a>
+            <a href="">吴山</a>
+            <a href="">菜市桥</a>
+            <a href="">解百</a>
+            <a href="">马市街</a>
+            <a href="">雄镇楼</a>
+            <a href="">河坊街</a>
+          </span>
+        </div>
+      </span>
+    </div>
+    <div class="terms">
+      <label class="term-title">租金:</label>
+      <span class="term-list">
+        <a href="">不限</a>
+        <a href="" class="active">1200元以下</a>
+        <a href="">1200-1500元</a>
+        <a href="">1500-2000元</a>
+        <a href="">2000-2500元</a>
+        <a href="">2500-3500元</a>
+        <a href="">3500-4500元</a>
+        <a href="">4500元以上</a>
+        <span class="custom">
+          <input type="text" class="textinput">
+          -
+          <input type="text" class="textinput">
+          元
+          <input type="button" name="name" class="btn" value="确定">
+        </span>
+      </span>
+    </div>
+    <div class="terms">
+      <label class="term-title">方式:</label>
+      <span class="term-list">
+        <a href="">不限</a>
+        <a href="" class="active">整租</a>
+        <a href="">合租</a>
+      </span>
+    </div>
+    <div class="terms">
+      <label class="term-title">类型:</label>
+      <span class="term-list">
+        <a href="">不限</a>
+        <a href="" class="active">集寓</a>
+        <a href="">蜗居</a>
+        <a href="">吾舍</a>
+        <a href="">特价</a>
+        <a href="">最热</a>
+      </span>
+    </div>
+    <div class="terms">
+      <label class="term-title">户型:</label>
+      <span class="term-list">
+        <a href="">不限</a>
+        <a href="" class="active">一室</a>
+        <a href="">二室</a>
+        <a href="">三室</a>
+        <a href="">四室</a>
+        <a href="">四室以上</a>
+      </span>
+    </div>
+    <div class="terms more">
+      <label class="term-title">装修:</label>
+      <span class="term-list">
+        <a href="">不限</a>
+        <a href="" class="active">豪华装修</a>
+        <a href="">精装修</a>
+        <a href="">简装</a>
+        <a href="">毛坯</a>
+      </span>
+    </div>
+    <div class="terms more">
+      <label class="term-title">面积:</label>
+      <span class="term-list">
+        <a href="">不限</a>
+        <a href="" class="active">50㎡以下</a>
+        <a href="">50㎡-70㎡</a>
+        <a href="">70㎡-90㎡</a>
+        <a href="">90㎡-120㎡</a>
+        <a href="">120㎡-140㎡</a>
+        <a href="">140㎡以上</a>
+      </span>
+    </div>
+    <div class="terms more">
+      <label class="term-title">朝向:</label>
+      <span class="term-list">
+        <a href="">不限</a>
+        <a href="" class="active">朝北</a>
+        <a href="">朝南</a>
+        <a href="">朝东</a>
+        <a href="">朝西</a>
+        <a href="">东北</a>
+        <a href="">东南</a>
+        <a href="">西南</a>
+        <a href="">西北</a>
+        <a href="">东西</a>
+        <a href="">南北</a>
+      </span>
+    </div>
+    <div class="terms more">
+      <label class="term-title">特色:</label>
+      <span class="term-list">
+        <a href="">不限</a>
+        <a href="" class="checkbox">
+          <input id="one" type="checkbox">
+          <label for="one">带飘窗</label>
+        </a>
+        <a href="" class="checkbox">
+          <input id="two" type="checkbox">
+          <label for="two">带阳台</label>
+        </a>
+        <a href="" class="checkbox">
+          <input id="three" type="checkbox">
+          <label for="three">独立卫浴</label>
+        </a>
+        <a href="" class="checkbox">
+          <input id="four" type="checkbox">
+          <label for="four">可住两人</label>
+        </a>
+        <a href="" class="checkbox">
+          <input id="five" type="checkbox">
+          <label for="five">落地窗</label>
+        </a>
+      </span>
+    </div>
+    <a class="btn-term down">
+      <i class="icon icon-down"></i>
+      <i class="icon icon-up"></i>
+    </a>
+  </div>
+  <div class="wrap terms-panel">
+    <label>条件:</label>
+    <span>
+      <a href="" class="term-item">
+        <span>上城区</span>
+        <i class="icon icon-close2"></i>
+      </a>
+      <a href="" class="term-item">
+        <span>蜗居</span>
+        <i class="icon icon-close2"></i>
+      </a>
+      <a href="" class="term-item">
+        <span>特价</span>
+        <i class="icon icon-close2"></i>
+      </a>
+      <a href="" class="btn-clear">
+        <i class="icon icon-delete"></i>
+        <span>清除全部</span>
+      </a>
+    </span>
+  </div>
+  <div class="order">
+    <label for="">排序:</label>
+    <a>
+      <span>默认</span>
+    </a>
+    <a class="active down">
+      <span>租金</span>
+      <i class="icon icon-down"></i>
+      <i class="icon icon-up"></i>
+    </a>
+    <a>
+      <span>面积</span>
+      <i class="icon icon-down"></i>
+      <i class="icon icon-up"></i>
+    </a>
+  </div>
+  <div class="clearfix">
+    <a class="list-item">
+      <div class="list-item-pic">
+        <img src="../../assets/list/1.png" alt="">
+      </div>
+      <div class="list-item-info">
+        <div class="list-item-intro">
+          <i class="type-tag">整租</i>
+          <span>大华西溪风情  集寓整租  朝南阳台  双卫  8㎡</span>
+          <i class="icon icon-hot"></i>
+          <strong>5500元/月</strong>
+        </div>
+        <div class="list-wrap">
+          <p>8㎡  3/6  三室一厅  精装修</p>
+          <p>西湖区留下余杭文一西路833号</p>
+          <i class="tag">集寓</i>
+        </div>
+      </div>
+    </a>
+    <a class="list-item">
+      <div class="list-item-pic">
+        <img src="../../assets/list/2.png" alt="">
+      </div>
+      <div class="list-item-info">
+        <div class="list-item-intro">
+          <i class="type-tag green">整租</i>
+          <span>大华西溪风情  3户合租  房间丙  朝北  8㎡</span>
+          <strong>4500元/月</strong>
+        </div>
+        <div class="list-wrap">
+          <p>8㎡  3/6  三室一厅  精装修</p>
+          <p>西湖区留下余杭文一西路833号</p>
+          <i class="tag">蜗居</i>
+        </div>
+      </div>
+    </a>
+    <a class="list-item">
+      <div class="list-item-pic">
+        <img src="../../assets/list/1.png" alt="">
+      </div>
+      <div class="list-item-info">
+        <div class="list-item-intro">
+          <i class="type-tag">整租</i>
+          <span>大华西溪风情  集寓整租  朝南阳台  双卫  8㎡</span>
+          <i class="icon icon-prefer"></i>
+          <strong>5500元/月</strong>
+        </div>
+        <div class="list-wrap">
+          <p>8㎡  3/6  三室一厅  精装修</p>
+          <p>西湖区留下余杭文一西路833号</p>
+          <i class="tag">集寓</i>
+        </div>
+      </div>
+    </a>
+    <a class="list-item">
+      <div class="list-item-pic">
+        <img src="../../assets/list/2.png" alt="">
+      </div>
+      <div class="list-item-info">
+        <div class="list-item-intro">
+          <i class="type-tag green">整租</i>
+          <span>大华西溪风情  3户合租  房间丙  朝北  8㎡</span>
+          <strong>4500元/月</strong>
+        </div>
+        <div class="list-wrap">
+          <p>8㎡  3/6  三室一厅  精装修</p>
+          <p>西湖区留下余杭文一西路833号</p>
+          <i class="tag">蜗居</i>
+        </div>
+      </div>
+    </a>
+    <a class="list-item">
+      <div class="list-item-pic">
+        <img src="../../assets/list/1.png" alt="">
+      </div>
+      <div class="list-item-info">
+        <div class="list-item-intro">
+          <i class="type-tag">整租</i>
+          <span>大华西溪风情  集寓整租  朝南阳台  双卫  8㎡</span>
+          <strong>5500元/月</strong>
+        </div>
+        <div class="list-wrap">
+          <p>8㎡  3/6  三室一厅  精装修</p>
+          <p>西湖区留下余杭文一西路833号</p>
+          <i class="tag">集寓</i>
+        </div>
+      </div>
+    </a>
+    <a class="list-item">
+      <div class="list-item-pic">
+        <img src="../../assets/list/2.png" alt="">
+      </div>
+      <div class="list-item-info">
+        <div class="list-item-intro">
+          <i class="type-tag green">整租</i>
+          <span>大华西溪风情  3户合租  房间丙  朝北  8㎡</span>
+          <strong>4500元/月</strong>
+        </div>
+        <div class="list-wrap">
+          <p>8㎡  3/6  三室一厅  精装修</p>
+          <p>西湖区留下余杭文一西路833号</p>
+          <i class="tag">蜗居</i>
+        </div>
+      </div>
+    </a>
+    <a class="list-item">
+      <div class="list-item-pic">
+        <img src="../../assets/list/1.png" alt="">
+      </div>
+      <div class="list-item-info">
+        <div class="list-item-intro">
+          <i class="type-tag">整租</i>
+          <span>大华西溪风情  集寓整租  朝南阳台  双卫  8㎡</span>
+          <strong>5500元/月</strong>
+        </div>
+        <div class="wrap">
+          <p>8㎡  3/6  三室一厅  精装修</p>
+          <p>西湖区留下余杭文一西路833号</p>
+          <i class="tag">集寓</i>
+        </div>
+      </div>
+    </a>
+    <a class="list-item">
+      <div class="list-item-pic">
+        <img src="../../assets/list/2.png" alt="">
+      </div>
+      <div class="list-item-info">
+        <div class="list-item-intro">
+          <i class="type-tag green">整租</i>
+          <span>大华西溪风情  3户合租  房间丙  朝北  8㎡</span>
+          <strong>4500元/月</strong>
+        </div>
+        <div class="wrap">
+          <p>8㎡  3/6  三室一厅  精装修</p>
+          <p>西湖区留下余杭文一西路833号</p>
+          <i class="tag">蜗居</i>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="pagination-container">
+    <div class="pagination">
+      <a class="prev">上一页</a>
+      <a class="first">1</a>
+      <span>...</span>
+      <a>3</a>
+      <a>4</a>
+      <a class="cur">5</a>
+      <a>6</a>
+      <a>7</a>
+      <span>...</span>
+      <a class="last">10</a>
+      <a class="next">下一页</a>
+    </div>
+  </div>
+
+</div>
+
+<ul class="site-group">
+  <li class="btn-top">
+    <i class="icon icon-top"></i>
+  </li>
+  <li class="btn-qrcode">
+    <i class="icon icon-qrcode"></i>
+    <div class="qrcode">
+      <img src="../../assets/follow.png" alt="">
+      <p>爱上租官方微信二维码微信扫一扫，关注我们</p>
+      <i class="arrow"></i>
+      <i class="arrow-shadow"></i>
+    </div>
+  </li>
+  <li class="btn-feedback">
+    <i class="icon icon-feedback"></i>
+  </li>
+</ul>
+<div class="feedback">
+  <div class="ui-mask"></div>
+  <div class="ui-dialog">
+    <div class="ui-dialog-header clearfix">
+      <a class="ui-dialog-close">
+        <i class="icon icon-close"></i>
+      </a>
+    </div>
+    <div class="ui-dialog-content">
+      <div class="ui-tabs-triggers">
+        <a class="ui-tabs-trigger">我要找房</a>
+        <a class="ui-tabs-trigger m38 active">意见反馈</a>
+        <a class="ui-tabs-trigger">我要出租</a>
+      </div>
+      <div class="ui-tabs-panels">
+        <div class="ui-tabs-panel">
+          <form class="ui-form" id="rent">
+            <div class="row">
+              <input placeholder="姓名" type="text" class="textinput w364 name">
+            </div>
+            <div class="row">
+              <input placeholder="手机号" type="text" class="textinput w364 phone">
+            </div>
+            <div class="row">
+              <input placeholder="意向价位" type="text" class="textinput w364 spread">
+            </div>
+            <div class="row">
+              <textarea placeholder="备注(请输入区域和居住人数)" class="textinput w364 remark" rows="8" cols="40" style="height:150px;"></textarea>
+            </div>
+            <div class="row">
+              <label class="checkbox active rent-type">
+                <i class="icon icon-right"></i>
+                <i class="circle"></i>
+                <span>整租</span>
+              </label>
+              <label class="checkbox rent-type">
+                <i class="icon icon-right"></i>
+                <i class="circle"></i>
+                <span>合租</span>
+              </label>
+              <label class="checkbox rent-type">
+                <i class="icon icon-right"></i>
+                <i class="circle"></i>
+                <span>均可</span>
+              </label>
+            </div>
+            <div class="row" style="padding-top:16px;">
+              <a class="btn w364">提交</a>
+            </div>
+          </form>
+        </div>
+        <div class="ui-tabs-panel" style="display:block">
+          <form class="ui-form" id="feedback">
+            <div class="row">
+              <textarea placeholder="反馈内容" class="textinput w364 feedback-content" rows="8" cols="40" style="height:150px;"></textarea>
+            </div>
+            <div class="row">
+              <input placeholder="姓名" type="text" class="textinput w364 name">
+            </div>
+            <div class="row">
+              <input placeholder="手机号" type="text" class="textinput w364 phone">
+            </div>
+            <div class="row" style="padding-top:16px;">
+              <a class="btn w364">提交</a>
+            </div>
+          </form>
+        </div>
+        <div class="ui-tabs-panel">
+          <form class="ui-form" id="landlord">
+            <div class="row">
+              <div id="area" class="selectbox"></div>
+              <input type="text" class="textinput name" style="width:236px;" placeholder="请输入小区名">
+            </div>
+            <div class="row clearfix">
+              <div id="room" class="selectbox"></div>
+              <div id="board" class="selectbox"></div>
+              <div id="toilet" class="selectbox"></div>
+            </div>
+            <div class="row">
+              <input placeholder="意向价位" type="text" class="textinput w364 spread">
+            </div>
+            <div class="row">
+              <input placeholder="联系人" type="text" class="textinput w364 linkman">
+            </div>
+            <div class="row">
+              <input placeholder="联系电话" type="text" class="textinput w364 phone">
+            </div>
+            <div class="row" style="padding-top:16px;">
+              <a class="btn w364">提交</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 友情链接 start-->
+<div class="links">
+  <div class="container">
+    <div class="links-triggers">
+      <a class="links-trigger active">热门整租</a>
+      <a class="links-trigger">热门合租</a>
+      <a class="links-trigger">友情链接</a>
+    </div>
+    <div class="links-panels clearfix">
+      <div class="links-content">
+        <a href="" class="link-item">西湖区整租房</a>
+        <a href="" class="link-item">西湖区整租房</a>
+        <a href="" class="link-item">西湖区整租房</a>
+        <a href="" class="link-item">西湖区整租房</a>
+        <a href="" class="link-item">西湖区整租房</a>
+        <a href="" class="link-item">西湖区整租房</a>
+        <a href="" class="link-item">西湖区整租房</a>
+        <a href="" class="link-item">西湖区整租房</a>
+        <a href="" class="link-item">西湖区整租房</a>
+        <a href="" class="link-item">西湖区整租房</a>
+        <a href="" class="link-item">西湖区整租房</a>
+        <a href="" class="link-item">西湖区整租房</a>
+        <a href="" class="link-item">西湖区整租房</a>
+        <a href="" class="link-item">西湖区整租房</a>
+        <a href="" class="link-item">西湖区整租房</a>
+        <a href="" class="link-item">西湖区整租房</a>
+        <a href="" class="link-item">西湖区整租房</a>
+        <a href="" class="link-item">西湖区整租房</a>
+        <a href="" class="link-item">西湖区整租房</a>
+        <a href="" class="link-item">西湖区整租房</a>
+        <a href="" class="link-item">西湖区整租房</a>
+        <a href="" class="link-item">西湖区整租房</a>
+        <a href="" class="link-item">西湖区整租房</a>
+        <a href="" class="link-item">西湖区整租房</a>
+        <a href="" class="link-item">西湖区整租房</a>
+        <a href="" class="link-item">西湖区整租房</a>
+        <a href="" class="link-item">西湖区整租房</a>
+        <a href="" class="link-item">西湖区整租房</a>
+        <a href="" class="link-item">西湖区整租房</a>
+        <a href="" class="link-item">西湖区整租房</a>
+        <a href="" class="link-item">西湖区整租房</a>
+        <a href="" class="link-item">西湖区整租房</a>
+        <a href="" class="link-item">西湖区整租房</a>
+        <a href="" class="link-item">西湖区整租房</a>
+
+      </div>
+      <div class="links-content" style="display:none">
+        <a href="" class="link-item">西湖区整租房</a>
+        <a href="" class="link-item">西湖区整租房</a>
+        <a href="" class="link-item">西湖区整租房</a>
+      </div>
+      <div class="links-content" style="display:none">
+        <a href="" class="link-item">西湖区整租房</a>
+        <a href="" class="link-item">西湖区整租房</a>
+        <a href="" class="link-item">西湖区整租房</a>
+        <a href="" class="link-item">西湖区整租房</a>
+        <a href="" class="link-item">西湖区整租房</a>
+        <a href="" class="link-item">西湖区整租房</a>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- 友情链接 end -->
+
+{{/block}}

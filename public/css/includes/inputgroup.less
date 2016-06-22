@@ -1,0 +1,47 @@
+.inputgroup{
+  @height:50px;
+
+  display: inline-block;
+  height: @height;
+
+  .action{
+    float: right;
+  }
+
+  .textinput{
+    border-right: 0;
+    height: @height;
+    line-height: 46px;
+  }
+
+  .action{
+    box-sizing: border-box;
+    width: 50px;
+    height: @height;
+    line-height: 48px;
+    border: 1px solid @border-color;
+    text-align: center;
+    text-decoration: none;
+    color: @bdtxt-color;
+    font-size: 24px;
+
+    &:hover{
+      background-color: @hightlight-color;
+      color: #fff;
+    }
+
+    &:hover::before{
+      text-decoration: none;
+    }
+  }
+
+  &.actived{
+    .textinput{
+      border-color: @hightlight-border-color;
+    }
+
+    .action{
+      border-color: @hightlight-border-color;
+    }
+  }
+}

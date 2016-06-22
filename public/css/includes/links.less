@@ -1,0 +1,39 @@
+.links{
+  background-color: @bg-color;
+  border-bottom: 1px solid @border-color;
+
+  .container{
+    box-sizing: border-box;
+    padding: 35px 24px 36px;
+  }
+
+  .links-triggers{
+    margin-bottom: 4px;
+  }
+
+  .links-trigger{
+    font-size: 15px;
+    line-height: 15px;
+    font-weight: 500;
+    margin-right: 80px;
+    color: @bdtxt-color;
+
+    &.active,
+    &:hover{
+      color: @hightlight-color;
+    }
+  }
+
+  .links-panels{
+    min-height: 66px;
+  }
+
+  .link-item{
+    float: left;
+    font-size: 12px;
+    line-height: 12px;
+    color: @bdtxt-color;
+    margin-right: 14px;
+    margin-top: 10px;
+  }
+}

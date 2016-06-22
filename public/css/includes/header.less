@@ -1,0 +1,110 @@
+header,
+.global-header{
+  width:100%;
+  min-width: 1280px;
+  height: 100px;
+  background-color: @nav-color;
+}
+
+.global-header-container{
+  position: relative;
+  height: 100%;
+
+  .logo,
+  .city{
+    height: 55px;
+    float: left;
+    margin-top: 23px;
+  }
+  .logo{
+    width: 55px;
+    line-height: 55px;
+    text-align: center;
+    background-color: @logo-bg-color;
+    color: #fff;
+    font-size: 55px;
+  }
+
+  .city{
+    margin-left: 11px;
+    visibility: hidden;
+    .current-city{
+      display: block;
+      font-size: 20px;
+      line-height: 20px;
+      margin: 6px 0;
+      color: @bdtxt-color;
+      text-align: center;
+    }
+
+    .change-city{
+      box-sizing: border-box;
+      display: block;
+      width: 62px;
+      height: 18px;
+      line-height: 18px;
+      border:1px solid #e6e6e6;
+      font-size: 12px;
+      color: #3F3F3F;
+      text-align: center;
+    }
+  }
+
+  .nav{
+    float: left;
+    margin-left: 73px;
+    margin-top: 42px;
+    .nav-item{
+      float: left;
+      width: 72px;
+      text-align: center;
+      font-size: 18px;
+      color: @bdtxt-color;
+      margin-right: 50px;
+
+      &.active,
+      &:hover{
+        color: @hightlight-color;
+      }
+    }
+  }
+
+  .inputgroup,.btn{
+    margin-top: 25px;
+  }
+
+  .inputgroup{
+    float: left;
+    margin-left: 35px;
+    width: 280px;
+
+    .textinput{
+      width: 230px;
+    }
+  }
+
+  .btn{
+    float: left;
+    width: 88px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    margin-left: 12px;
+  }
+
+  .hot-list{
+    position: absolute;
+    right: 159px;
+    top:39px;
+  }
+
+  .hot-item{
+    display: inline-block;
+    line-height: 18px;
+    font-size: 12px;
+    color: #666;
+    padding: 0 5px;
+    background-color: #f1f1f1;
+    margin-right: 1px;
+  }
+}

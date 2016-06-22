@@ -1,0 +1,88 @@
+<footer>
+  <!-- footer start -->
+  <div class="global-footer">
+    <div class="container">
+      <dl>
+        <dt>关于爱上租</dt>
+        <dd>
+          <a href="">公司简介</a>
+        </dd>
+        <dd>
+          <a href="">发展历程</a>
+        </dd>
+        <dd>
+          <a href="">联系我们</a>
+        </dd>
+        <dd>
+          <a href="">加入我们</a>
+        </dd>
+      </dl>
+      <dl>
+        <dt>爱上活动</dt>
+        <dd>
+          <a href="">官方活动</a>
+        </dd>
+        <dd>
+          <a href="">爱上生活</a>
+        </dd>
+        <dd>
+          <a href="">租客趣闻</a>
+        </dd>
+        <dd>
+          <a href="">媒体报道</a>
+        </dd>
+      </dl>
+      <dl>
+        <dt>帮助反馈</dt>
+        <dd>
+          <a href="">房东加盟</a>
+        </dd>
+        <dd>
+          <a class="feedback-link">意见反馈</a>
+        </dd>
+        <dd class="btn-qrcode">
+          <a>入住须知</a>
+          <div class="qrcode">
+            <img src="../../assets/notice.png" alt="">
+            <p style="text-align:center">扫一扫</p>
+            <i class="arrow"></i>
+            <i class="arrow-shadow"></i>
+          </div>
+        </dd>
+      </dl>
+      <dl>
+        <dt>关注我们</dt>
+        <dd class="btn-qrcode">
+          <a>官方微信</a>
+          <div class="qrcode">
+            <img src="../../assets/follow.png" alt="">
+            <p>爱上租官方微信二维码微信扫一扫，关注我们</p>
+            <i class="arrow"></i>
+            <i class="arrow-shadow"></i>
+          </div>
+        </dd>
+        <dd class="btn-qrcode">
+          <a>下载APP</a>
+          <div class="qrcode">
+            <img src="../../assets/app.png" alt="">
+            <p style="text-align:center;margin-top:10px">扫码下载爱上租APP</p>
+            <i class="arrow"></i>
+            <i class="arrow-shadow"></i>
+          </div>
+        </dd>
+        <dd>
+          <a href="">网站地图</a>
+        </dd>
+      </dl>
+      <div class="contact-links">
+        <p class="tel">400-018-2323</p>
+        <p class="work-date">周一至周日9:00-18:00</p>
+        <p class="remark">(仅收市话费)</p>
+      </div>
+      <p class="copyright">©2016 Ishangzu Telecom Equipment Co., Ltd. All rights reserved. 备案号：浙ICP备15007224号-2</p>
+    </div>
+  </div>
+  <!-- footer end -->
+
+  <script src="../build/js/list.app.js" charset="utf-8"></script>
+</footer>

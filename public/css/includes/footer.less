@@ -1,0 +1,83 @@
+footer,
+.global-footer{
+  height: 240px;
+  min-width: 1280px;
+  background-color: @bg-color;
+
+  dl{
+    width: 247px;
+    height: 215px;
+    float: left;
+
+    dt,dd{
+      padding-left: 24px;
+    }
+
+    dt{
+      margin-top: 36px;
+      font-size: 15px;
+      color: @bdtxt-color;
+      font-weight: 500;
+    }
+
+    dd{
+      font-size: 14px;
+      color: @bdtxt-color;
+      margin-top: 15px;
+      position: relative;
+    }
+  }
+
+  .contact-links{
+    width: 238px;
+    height: 215px;
+    float: left;
+    text-align: center;
+
+    .tel{
+      font-size: 23px;
+      font-weight: 500;
+      line-height: 32px;
+      color: #FF5D68;
+      margin-top: 36px;
+    }
+
+    .work-date,
+    .remark{
+      font-size: 14px;
+      line-height: 24px;
+      color: @bdtxt-color;
+    }
+  }
+
+  .copyright{
+    text-align: center;
+    font-size: 12px;
+    line-height: 17px;
+    color: @bdtxt-color;
+  }
+
+  .btn-qrcode{
+    .qrcode{
+      left:auto;
+      right: 11px;
+      top:-72px;
+
+      .arrow,
+      .arrow-shadow{
+        right: auto;
+        left:-18px;
+      }
+
+      .arrow{
+        border-color: transparent #fff transparent transparent;
+      }
+
+      .arrow-shadow{
+        border-color: transparent #e6e6e6 transparent transparent;
+        left:-21px;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,48 @@
+.checkbox{
+  display: inline-block;
+  height: 18px;
+  font-size: 16px;
+  line-height: 18px;
+  color: @bdtxt-color;
+  margin-right: 96px;
+  cursor: pointer;
+
+  &:last-child{
+    margin-right: 0;
+  }
+
+  &.last-item{
+    margin-right: 0;
+  }
+
+  .icon{
+    width: 18px;
+    height: 18px;
+    font-size: 18px;
+    color: @hightlight-color;
+    display: none;
+  }
+
+  .circle{
+    box-sizing: border-box;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #E0E0E0;
+    border-radius: 100%;
+  }
+
+  span{
+    vertical-align: top;
+  }
+
+  &.active{
+    .icon{
+      display: inline-block;;
+    }
+
+    .circle{
+      display: none;
+    }
+  }
+}

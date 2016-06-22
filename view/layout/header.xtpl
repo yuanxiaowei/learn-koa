@@ -1,0 +1,30 @@
+<header>
+  <!-- header start -->
+  <div class="global-header clearfix">
+    <div class="global-header-container container">
+      <a href="/" class="logo icon icon-logo" alt="杭州租房,杭州房屋出租,找杭州租房网就上爱上租！"></a>
+      <div class="city">
+        <span class="current-city">杭州</span>
+        <a class="change-city">切换城市</a>
+      </div>
+      <div class="nav clearfix">
+        <a class="nav-item active" href="/">首页</a>
+        <a class="nav-item" href="/zhengzu">我要租房</a>
+        <a class="nav-item" href="/jiaMeng">房东加盟</a>
+        <a class="nav-item" href="/activity">爱上活动</a>
+        <a class="nav-item" href="/aboutUs">关于我们</a>
+      </div>
+      <div class="clearfix inputgroup placeholder">
+        <input type="text" class="textinput placeholder">
+        <a href="" class="action icon icon-search"></a>
+      </div>
+      <a class="btn">地图找房</a>
+      <div class="hot-list">
+        <a class="hot-item">滨江区</a>
+        <a class="hot-item">西湖区</a>
+        <a class="hot-item">武林广场</a>
+      </div>
+    </div>
+  </div>
+  <!-- header end -->
+</header>

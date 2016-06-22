@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="renderer" content="webkit">
+  <title>【杭州租房|杭州合租|杭州整租|杭州房屋出租】-爱上租</title>
+  <meta name="keywords" content="杭州租房，杭州租房网，杭州合租房，杭州整租房，杭州房屋出租">
+  <meta name="Description" content="爱上租，杭州最专业的租房网站，自营公寓，为您提供真实、优质、可靠的杭州租房信息、合租房源信息、整租房源信息、房屋出租信息，爱上租，让租房变得更简单！">
+  <link rel="stylesheet" href="../build/css/list.css"> {{{block ("head")}}}
+</head>
+
+<body>
+  {{include ("./header")}}
+  <article class="main">
+    {{{block ("body")}}}
+  </article>
+  {{include ("./footer")}}
+</body>
+
+</html>

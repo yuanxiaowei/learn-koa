@@ -1,0 +1,67 @@
+{
+  "name": "ishangzu-frontend",
+  "version": "1.0.0",
+  "description": "爱上租官网 pc端-前端",
+  "repository": {
+    "type": "git",
+    "url": "https://git.oschina.net/woju/ishangzu-frontend.git"
+  },
+  "keywords": [
+    "爱上租"
+  ],
+  "scripts": {
+    "start": "supervisor --harmony app.js",
+    "test": "mocha --harmony"
+  },
+  "author": "hujin0327@126.com",
+  "license": "MIT",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "dependencies": {
+    "convert-source-map": "~0.4.1",
+    "gulp": "~3.8.10",
+    "gulp-clean": "~0.3.1",
+    "gulp-concat": "~2.4.3",
+    "gulp-css2js": "^1.0.2",
+    "gulp-cssmin": "~0.1.6",
+    "gulp-declare": "~0.3.0",
+    "gulp-filter": "~2.0.0",
+    "gulp-rename": "~1.2.0",
+    "gulp-sourcemaps": "~1.3.0",
+    "gulp-uglify": "~1.0.2",
+    "gulp-util": "~3.0.2",
+    "less": "2.6.1",
+    "object-assign": "^2.0.0",
+    "lodash.defaults": "~2.4.1",
+    "map-stream": "0.0.5",
+    "serialize-deptree": "~0.1.0",
+    "through2": "~0.6.3",
+    "uglify-js": "~2.4.16",
+    "vinyl-fs": "~0.3.13",
+    "vinyl-sourcemaps-apply": "~0.1.4",
+    "koa": "0.6.0",
+    "koa-router": "3.4.0",
+    "koa-compress": "1.0.6",
+    "koa-static-cache": "1.2.0",
+    "koa-static": "^2.0.0",
+    "koa-session": "3.1.0",
+    "koa-validator": "0.6.3",
+    "koa-bodyparser": "1.3.0",
+    "koa-onerror": "1.2.0",
+    "lru-cache": "2.5.0",
+    "mini-logger": "1.0.0",
+    "xtemplate": "4.2.4",
+    "xtpl": "3.1.9",
+    "debug": "2.0.0",
+    "co-urllib": "0.2.3",
+    "co": "3.1.0",
+    "underscore": "1.7.0"
+  },
+  "devDependencies": {
+    "mocha": "^1.18.2",
+    "should": "3.3.2",
+    "supertest": "^0.12.1",
+    "supervisor": "^0.10.0"
+  }
+}
